@@ -19,7 +19,7 @@
   };
   
   // 分享链接
-  const SHARE_LINK = 'https://cjdr4pdjkh.coze.site/';
+  const SHARE_LINK = 'https://ukbti.vercel.app/';
   
   // 初始化元素
   function initElements() {
