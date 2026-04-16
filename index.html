@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UKBTI - 英国留学生性格测试</title>
+  <meta name="description" content="发现你的UKBTI人格类型！仅供娱乐，如果结果不准，那一定是设计师的问题。">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    /* 首页额外样式 */
+    .landing-hero {
+      background: linear-gradient(135deg, var(--uk-color-primary) 0%, var(--uk-color-accent) 100%);
+      color: white;
+      padding: 80px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .landing-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    
+    .landing-hero h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      position: relative;
+    }
+    
+    .landing-hero h1::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 30px;
+      background: linear-gradient(180deg, 
+        #012169 0%, #012169 25%, 
+        white 25%, white 50%, 
+        #c8102e 50%, #c8102e 75%, 
+        white 75%, white 100%);
+      background-size: 18px 15px;
+      background-position: 0 0, 9px 0;
+      margin-right: 18px;
+      vertical-align: middle;
+      border-radius: 3px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+    
+    .landing-hero p {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      max-width: 550px;
+      margin: 0 auto;
+      position: relative;
+      line-height: 1.6;
+    }
+    
+    .landing-content {
+      padding: 60px 30px;
+      text-align: center;
+    }
+    
+    .cta-info {
+      color: var(--uk-text-light);
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+    
+    .btn-large {
+      padding: 18px 50px;
+      font-size: 1.2rem;
+    }
+    
+    .personality-preview {
+      margin-top: 70px;
+      padding: 50px 35px;
+      background: var(--uk-color-cream);
+      border-radius: var(--uk-radius-lg);
+    }
+    
+    .personality-preview h3 {
+      font-size: 1.6rem;
+      color: var(--uk-color-primary);
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+    
+    .personality-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      max-width: 750px;
+      margin: 0 auto;
+    }
+    
+    .personality-tag {
+      background: white;
+      padding: 12px 22px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--uk-color-primary);
+      box-shadow: var(--uk-shadow-sm);
+      transition: var(--uk-transition);
+    }
+    
+    .personality-tag:hover {
+      background: var(--uk-color-primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 35px;
+      color: var(--uk-text-light);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .landing-hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      .landing-hero h1::before {
+        width: 40px;
+        height: 24px;
+        background-size: 14px 12px;
+      }
+      
+      .landing-hero p {
+        font-size: 1.15rem;
+      }
+      
+      .landing-content {
+        padding: 40px 20px;
+      }
+      
+      .personality-preview {
+        padding: 35px 20px;
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 英雄区域 -->
+    <div class="landing-hero animate-fadeIn">
+      <h1>UKBTI</h1>
+      <p>适用于英国留学生/准留学生<br>⚠️仅供娱乐，如果结果不准，那一定是设计师的问题。</p>
+    </div>
+    
+    <!-- 主内容 -->
+    <div class="card animate-fadeIn" style="animation-delay: 0.2s;">
+      <div class="landing-content">
+        <p class="cta-info">无需注册，即开即测 · 约3分钟完成 · 立刻查看结果</p>
+        <a href="test.html" class="btn btn-primary btn-large">
+          开始测试
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        
+        <!-- 人格类型预览 -->
+        <div class="personality-preview">
+          <h3>你可能是哪种UKBTI？</h3>
+          <div class="personality-tags">
+            <span class="personality-tag">Office Hour战士</span>
+            <span class="personality-tag">Pub Quiz社交达人</span>
+            <span class="personality-tag">Tesco黄标生活家</span>
+            <span class="personality-tag">Turnitin强迫症</span>
+            <span class="personality-tag">六边形全能战士</span>
+            <span class="personality-tag">宿舍定海神针</span>
+            <span class="personality-tag">Distinction收割机</span>
+            <span class="personality-tag">留子大家长</span>
+            <span class="personality-tag">Seminar话痨大师</span>
+            <span class="personality-tag">扮猪吃老虎选手</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <div class="footer">
+      <p>UKBTI · designed by Howard</p>
+    </div>
+  </div>
+  
+  <script src="data.js"></script>
+  <script src="utils.js"></script>
+</body>
+</html>
